@@ -233,7 +233,7 @@
 			<div class="video" id="blog">
 				<div class="container video-wrap">
 					<div class="play">
-						<button class="play-btn"><img src="img/icon-play.png"></button>
+						<button class="play-btn" onclick="toggle();"><img src="img/icon-play.png"></button>
 					</div>
 					<div class="video-inf">
 						<h2>Waxom Video Presentation</h2>
@@ -501,10 +501,9 @@
 			<div id="video-popup" class="popup">
 				<div class="popup__body">
 					<div class="popup__content">
-						<button class="popup__close">X</button>
-						<div class="popup__video">
-							<iframe width="100%" height="430" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
+						<button class="popup__close" onclick="toggle();">X</button>
+						<!-- <video class="video" src="https://youtu.be/dQw4w9WgXcQ" controls="true"></video>	 -->	
+						<iframe class="popup-video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
